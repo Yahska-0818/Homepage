@@ -29,3 +29,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  margin: 0;
+  background-color: #FCD901;
+}
+
+.header {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #7D2A34;
+  margin: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}

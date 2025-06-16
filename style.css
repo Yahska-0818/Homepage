@@ -1,8 +1,8 @@
 /* polygon(0 0, 100% 0, 100% 50%, 0 100%); */
-@import "modern-normalize";
-
 :root {
   line-height: 1.5;
+  box-sizing: border-box;
+  font-family: 'Lora',serif;
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
@@ -19,7 +19,13 @@ h1, h2, h3, h4, h5 {
   font-weight: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
   display: block;
   max-inline-size: 100%;
+  max-width: 100%;
+  height: auto;
 }

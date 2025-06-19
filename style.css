@@ -5,6 +5,10 @@
   font-family: 'Lora',serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
 }
@@ -146,4 +150,199 @@ body {
   100% {
     transform: rotateZ(0.05turn)
   }
+}
+
+.clients {
+  margin: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.clientsHeader h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 4vh;
+}
+
+.clientsCards {
+  display: grid;
+  width: 195vh;
+  height: 80vh;
+  gap: 10vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.clientCard {
+  background-color: white;
+  border-radius: 1vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.clientCardContainer {
+  border-radius: 1vh;
+  perspective: 1000px;
+}
+
+.clientCardContainer:hover .clientCard {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#waltuhBack {
+  background-image: url("clientImages/waltuhBack.avif");
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-position: 0vh -2vh;
+}
+
+#waltuhBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+#waltuhFront {
+  background-image: url("clientImages/waltuhFront.webp");
+  background-position: 0vh -11vh;
+}
+
+#jesseFront {
+  background-image: url("clientImages/jessefront.webp");
+  background-position: 0vh -18vh;
+}
+
+#jesseBack {
+  background-image: url("clientImages/jesseback.webp");
+  background-position: 0vh -10vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#jesseBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+#gusFront {
+  background-image: url("clientImages/gusFront.webp");
+  background-position: 0vh -10vh;
+  
+}
+
+#gusBack {
+  background-image: url("clientImages/gusBack.webp");
+  background-position: 0vh 0vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gusBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+#hectorFront {
+  background-image: url("clientImages/hectorFront.webp");
+  background-position: 0vh -20vh;
+}
+
+#hectorBack {
+  background-image: url("clientImages/hectorBack.webp");
+  background-position: 0vh -5vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hectorBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+#nachoFront {
+  background-image: url("clientImages/nachoFront.webp");
+  background-position: 0vh -10vh;
+}
+
+#nachoBack {
+  background-image: url("clientImages/nachoBack.webp");
+  background-position: 0vh 0vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #212121;
+}
+
+#nachoBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#laloFront {
+  background-image: url("clientImages/laloFront.webp");
+  background-position: 0vh -10vh;
+}
+
+#laloBack {
+  background-image: url("clientImages/laloBack.webp");
+  background-position: 0vh 0vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#laloBack p {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.cardFront {
+  background-color: #f0f0f0;
+  color: white;
+}
+
+.cardBack {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.scroll {
+  color: #212121;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.scroll:hover {
+  background-color: #212121;
+  color: #FCD901;
+  padding: 0.5vh;
+  border-radius: 1vh;
 }

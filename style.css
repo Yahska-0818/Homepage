@@ -174,6 +174,16 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
+@media (width < 800px) {
+  .clientsCards {
+    width: 100%;
+    height: 200vh;
+    gap: 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
 .clientCard {
   background-color: white;
   border-radius: 1vh;

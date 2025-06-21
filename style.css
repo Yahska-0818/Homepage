@@ -356,3 +356,37 @@ body {
   padding: 0.5vh;
   border-radius: 1vh;
 }
+
+.footer {
+  background-color: #FCD901;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 7vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: flex-start;
+}
+
+.infoText p {
+  font-weight: 600;
+  font-size: 5vh;
+}
+
+.reach {
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+#footerNumber {
+  font-size: 3vh;
+}
+
+#footerIcon {
+  height: 3vh;
+  width: 3vh;
+}

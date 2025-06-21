@@ -39,6 +39,12 @@ body {
   background-color: #212121;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
 .header {
   min-width: 100vw;
   min-height: 100vh;
@@ -172,16 +178,6 @@ body {
   gap: 10vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
-
-@media (width < 800px) {
-  .clientsCards {
-    width: 100%;
-    height: 200vh;
-    gap: 10vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
 }
 
 .clientCard {
@@ -389,4 +385,67 @@ body {
 #footerIcon {
   height: 3vh;
   width: 3vh;
+}
+
+@media (width < 800px) {
+  .clientsCards {
+    width: 100%;
+    height: 200vh;
+    gap: 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #hectorFront {
+    background-position: 0vh -15vh;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pfpContainer {
+    width: 30vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pfp {
+    width: 45vh;
+    height: auto;
+  }
+
+  .pfpText {
+    width: 40vh;
+    height: 50vh;
+    border-radius: 1vh;
+  }
+
+  .number-wrapper svg {
+    height: 3vh;
+    width: 3vh;
+  }
+
+  .call {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .number-wrapper {
+    display: flex;
+    padding: 0;
+    align-items: start;
+    width: 33vh;
+  }
 }

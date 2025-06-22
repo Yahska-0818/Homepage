@@ -387,7 +387,7 @@ main {
   width: 3vh;
 }
 
-@media (width < 800px) {
+@media (width < 700px) {
   .clientsCards {
     width: 100%;
     height: 200vh;
@@ -400,10 +400,16 @@ main {
     background-position: 0vh -15vh;
   }
 
+  .infoText p {
+    font-size: 4vh;
+    font-weight: 900;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    padding: 4vh 5vh;
   }
 
   .cardContainer {
@@ -446,6 +452,120 @@ main {
     display: flex;
     padding: 0;
     align-items: start;
+    width: 33vh;
+  }
+}
+
+@media (width < 1000px) and (width > 700px) {
+  .clientsCards {
+    width: 100%;
+    height: 100vh;
+    gap: 10vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #waltuhFront {
+    background-position: center;
+  }
+
+  #hectorFront {
+    background-position: 0vh -8vh;
+  }
+
+  #jesseFront {
+    background-position: center;
+  }
+
+  #laloFront {
+    background-position: center;
+  }
+
+  #gusFront {
+    background-position: 1vh -4vh;
+  }
+
+  #nachoFront {
+    background-position: center;
+  }
+
+  #waltuhBack {
+    background-position: center;
+  }
+
+  #hectorBack {
+    background-position: center;
+  }
+
+  #jesseBack {
+    background-position: center;
+  }
+
+  #laloBack {
+    background-position: center;
+  }
+
+  #gusBack {
+    background-position: 0vh -2vh;
+  }
+
+  #nachoBack {
+    background-position: center;
+  }
+
+  .infoText p {
+    font-size: 4vh;
+    font-weight: 900;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 4vh 5vh;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pfpContainer {
+    width: 30vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pfp {
+    width: 45vh;
+    height: auto;
+  }
+
+  .pfpText {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 1vh;
+    padding: 2vh;
+  }
+
+  .number-wrapper svg {
+    height: 3vh;
+    width: 3vh;
+  }
+
+  .call {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .number-wrapper {
+    display: flex;
+    padding: 0;
+    align-items: center;
     width: 33vh;
   }
 }
